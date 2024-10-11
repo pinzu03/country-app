@@ -3,9 +3,14 @@
 
 <div class="row">
   <div class="col">
-    <!-- searchBox -->
+     <shared-search-box
+      (onValue)="searchByCapital($event)"
+      placeholder="Buscar por capital"></shared-search-box>
   </div>
+</div>
+<div class="row">
   <div class="col">
-    <!-- Tabla de resultados -->
+    <hr>
+    <countries-table [countries]="countries"></countries-table>
   </div>
 </div>
